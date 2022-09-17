@@ -27,7 +27,7 @@ const onSearch = async event => {
 
   const gallery = document.querySelector('.gallery');
   try {
-    data = await fetchCurrentPhoto(namePhoto, pageCountMain);
+    const data = await fetchCurrentPhoto(namePhoto, pageCountMain);
     console.log(data);
     const searchString = data.data.hits;
     console.log(data.data.totalHits);
@@ -75,7 +75,7 @@ const moreBtnHendler = async event => {
 
   const gallery = document.querySelector('.gallery');
   try {
-    data = await fetchCurrentPhoto(namePhoto, pageCountMain);
+    const data = await fetchCurrentPhoto(namePhoto, pageCountMain);
 
     const searchString = data.data.hits;
     console.log(searchString.length);
